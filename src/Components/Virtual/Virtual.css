@@ -1,0 +1,58 @@
+.Virtual {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    background:#D3D3D3;
+
+  }
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+.left > :nth-child(1) {
+   font-size: 2rem;
+   font-weight: bold;
+   text-transform: uppercase;
+   color: black;
+}
+.left > :nth-child(2) {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    display: block;
+    width: 20rem;
+    color: black;
+
+}
+.left > :nth-child(3) {
+    font-size: 1.6rem;
+    font-weight: bold;
+       color: black;
+           width: 20rem;
+
+
+}
+.beforeafter{
+    width: 30rem;
+}
+
+@media screen and (max-width: 768px) {
+    .Virtual {
+        flex-direction: column;
+        margin: auto;
+
+    }
+    .beforeafter{
+        width: 20rem;
+        margin: auto;
+    }
+    
+    .left{
+        text-align: center;
+        margin: auto
+      }
+}
+

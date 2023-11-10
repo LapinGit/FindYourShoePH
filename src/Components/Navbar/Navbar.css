@@ -1,0 +1,94 @@
+.navbar {
+    background-color: #333;
+    display: flex;
+  }
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 1;
+    flex: 1;
+}
+
+.nav-logo p{
+    font-size: 25px;
+    color: #f2f2f2;
+    font-weight: 600;
+}
+.nav-right{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.nav-menu{ 
+    font-size: 20px;
+    display: flex;
+    gap:5rem;
+    font-weight: 500;
+    list-style: none;
+    color: palevioletred;
+    cursor: pointer;
+    margin-right: 55px;
+    
+}
+.nav-right button{
+    width:7rem;
+    outline: none;
+    color: #515151;
+    height: 2rem;
+    border: none;
+    border-radius: 75px;
+    padding: 0.5rem;
+    justify-content: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.bars{
+    display: none;
+
+  }
+@media screen and (max-width: 1024px) {
+
+    .nav-right{
+        position: absolute;
+        top: 70px;
+        right: 1rem;
+        z-index: 9999;
+        background:white;
+        border-radius: 5px;
+        flex-direction: column;
+    }
+    .nav-menu{
+        flex-direction: column;
+    }
+    .bars{
+        display: block;
+        color: white;
+        padding: 1.5rem;
+        font-size: 55px;
+      }
+}
+@media screen and (max-width: 640px) {
+    .navbar {
+        background-color: #333;
+    }
+    .nav-right{
+        position: absolute;
+        top: 70px;
+        right: 1rem;
+        z-index: 9999;
+        background:white;
+        border-radius: 5px;
+        flex-direction: column;
+        flex-shrink: 0;
+    }
+    .bars{
+        display: block;
+        color: white;
+        padding: 1.5rem;
+        font-size: 55px;
+      }
+}
+
